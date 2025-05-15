@@ -5,7 +5,8 @@ pipeline {
     }
     stages {
         stage('Checkout Code') {
-             
+
+            
             steps {
                 echo 'Checkout Code'
                 //git branch: 'main', url: 'https://github.com/staticwebdev/react-basic.git'
