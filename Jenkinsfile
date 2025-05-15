@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                echo 'Checkout Code First time'
+                echo 'Checkout Code'
                 //git branch: 'main', url: 'https://github.com/staticwebdev/react-basic.git'
                 git branch: 'main', changelog: false, credentialsId: 'sonusharma85git', poll: false, url: 'https://github.com/sonusharma85indore/react-website.git'
             }
