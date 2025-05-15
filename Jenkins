@@ -1,0 +1,42 @@
+pipeline {
+    agent any
+    stages {
+        stage('Checkout Code') {
+            steps {
+                echo 'Checkout Code'
+            }    
+        }
+        stage('Install Dependency') {
+           
+            steps {
+                echo 'Install Dependency'
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'Build'
+            }
+        }
+        stage('Code Coverage') {
+            steps {
+                echo 'Code Coverage'
+            }
+        }
+        stage('Code Scan') {
+            steps {
+                echo 'Code Scan'
+            }
+        }
+        stage('Build Artifact') {
+            steps {
+                echo 'Build Artifact'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploy'
+            }
+        }
+        
+    }
+}
